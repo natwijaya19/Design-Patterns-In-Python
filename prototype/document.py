@@ -18,7 +18,7 @@ class Document(IProtoType):
         if mode == 2:
             # results in a 2 level shallow copy of the Document
             # since it also create new references for the 1st level list
-            # elements aswell
+            # elements as well
             doc_list = self.list.copy()
         if mode == 3:
             # recursive deep copy. Slower but results in a new copy
